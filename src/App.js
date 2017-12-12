@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ActionList, Icons, Theme, ResponsiveProvider } from 'hsl-shared-components';
+import { ActionList, Icons, Theme, ResponsiveProvider, Button } from 'hsl-shared-components';
 import { ThemeProvider } from 'styled-components';
 import { Link } from 'react-router';
 import logo from './logo.svg';
@@ -51,6 +51,7 @@ class App extends Component {
             <p className="App-intro">
               To get started, edit <code>src/App.js</code> and save to reload.
             </p>
+            <Button icon={<Icons.ArrowLeft />} onClick={()=>{}}>Nappi</Button>
             <ActionList
             items={itemsContainer}
           />
