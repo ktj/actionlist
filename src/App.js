@@ -53,8 +53,11 @@ class App extends Component {
             </p>
             <Button icon={<Icons.ArrowLeft />} onClick={()=>{}}>Nappi</Button>
             <ActionList
-            items={itemsContainer}
-          />
+              items={itemsContainer}
+            />
+            <div>
+              {this.props.children}
+            </div>
           </div>
         </ResponsiveProvider>
       </ThemeProvider>
